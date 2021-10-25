@@ -9,5 +9,8 @@
 ```
 npm install
 node server.js
+```
+* In another terminal, run the following
+```
 npm start
 ```
