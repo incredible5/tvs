@@ -1,4 +1,4 @@
-## How to run the solution
+## How to run the project
 
 * Clone the repo using ```git clone https://github.com/incredible5/tvs-assignment.git```
 
