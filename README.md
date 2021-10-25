@@ -14,3 +14,7 @@ node server.js
 ```
 npm start
 ```
+
+## Login credentials used in project:
+* username: test
+* password: 123456
