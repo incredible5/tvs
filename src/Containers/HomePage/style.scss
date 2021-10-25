@@ -1,0 +1,132 @@
+.homepage-container {
+    width: 100%;
+    height: 100%;
+    .logout {
+        float: right;
+        margin: 0 40px;
+    }
+    .chart-prev-btn {
+        width: 302px;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: initial;
+        box-shadow: none;
+        color: #fff;
+        cursor: pointer;
+        background-image: linear-gradient(99deg, #ff2481, #ff5f2e 101%);
+        display: block;
+        margin: 55px auto;
+    }
+    .data-table {
+        width: 80%;
+        margin: 30px auto;
+        text-align: center;
+        border-collapse: collapse;
+        thead {
+            tr {
+                background-color: rgb(0, 0, 0);
+                color: white;
+                font-size: 18px;
+                th {
+                    padding: 20px;
+                }
+            }
+        }
+        tbody {
+            tr {
+                cursor: pointer;
+                transition: all 0.2s;
+                &:hover {
+                    transform: scaleX(1.02);
+                    background-color: rgba(100, 100, 100, 0.1);
+                    td {
+                        border: none;
+                    }
+                }
+            }
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            td {
+                border: 1px solid #ddd;
+                padding: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .homepage-container {
+        .logout {
+            width: max-content;
+            float: none;
+            margin: 20px auto 0 auto;
+        }
+        .chart-prev-btn {
+            margin: 20px auto;
+        }
+    }
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: 1px solid #ccc;
+    }
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50% !important;
+        text-align: right;
+    }
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        // white-space: nowrap;
+    }
+    /*
+        Label the data
+        */
+    td:nth-of-type(1):before {
+        content: "Name";
+        text-align: left;
+    }
+    td:nth-of-type(2):before {
+        text-align: left;
+        content: "Designation";
+    }
+    td:nth-of-type(3):before {
+        text-align: left;
+        content: "Address";
+    }
+    td:nth-of-type(4):before {
+        text-align: left;
+        content: "Pin Code";
+    }
+    td:nth-of-type(5):before {
+        text-align: left;
+        content: "Date of Joining";
+    }
+    td:nth-of-type(6):before {
+        text-align: left;
+        content: "Salary";
+    }
+}
