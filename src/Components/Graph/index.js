@@ -6,6 +6,7 @@ import "./style.scss";
 
 function Graph(props) {
   let { data } = props;
+  data = data.map((item) => item.data);
   data.sort(
     (a, b) =>
       b[5].replace("$", "").replace(/,/g, "") -
@@ -52,8 +53,8 @@ function Graph(props) {
       },
     },
     credits: {
-      enabled: false
-    }
+      enabled: false,
+    },
   };
   return (
     <div className={"graph-component"}>
