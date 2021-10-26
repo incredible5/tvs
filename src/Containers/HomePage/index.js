@@ -78,7 +78,7 @@ function Homepage(props) {
         </thead>
         <tbody>{data.map(renderDataTable)}</tbody>
       </table>
-      {showChart && <Graph onClose={setShowChart} data={data} />}
+      {showChart && <Graph onClose={setShowChart} data={dataCopy} />}
     </div>
   );
 }
