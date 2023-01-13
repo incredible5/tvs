@@ -1,8 +1,8 @@
 ## How to run the project
 
-* Clone the repo using ```git clone https://github.com/incredible5/tvs-assignment.git```
+* Clone the repo using ```git clone https://github.com/incredible5/tvs.git```
 
-* cd into the cloned repo by ```cd tvs-assignment```
+* cd into the cloned repo by ```cd tvs```
 
 * Run the following commands
 
